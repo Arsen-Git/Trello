@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+  gap: 100px;
+  justify-content: flex-start;
+
+  margin-top: 63px;
+  margin-left: 264px;
+  margin-bottom: 50px;
+}
+.form {
+  width: 285px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  &__title {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+
+    color: #000000;
+  }
+  &__field {
+    box-sizing: border-box;
+    padding: 8px 16px;
+    background: #f3f3f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border: none;
+    height: 32px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height */
+
+    color: #3f3f3f;
+  }
+  &__select {
+    box-sizing: border-box;
+    padding: 8px 16px;
+    background: #f3f3f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border: none;
+    height: 32px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height */
+
+    color: #3f3f3f;
+    & option:nth-child(2) {
+      color: green;
+    }
+    & option:nth-child(3) {
+      color: yellow;
+    }
+    & option:nth-child(4) {
+      color: red;
+    }
+  }
+  &__submit {
+    text-align: left;
+    box-sizing: border-box;
+    padding: 8px 16px;
+    background: #9f9f9f;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border: none;
+    height: 32px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #f3f3f3;
+  }
+}
+.cards {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  &__card {
+    box-sizing: border-box;
+    padding: 14px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 18vw;
+    height: 75vh;
+    background: #9f9f9f;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    &__item {
+      background: #f3f3f3;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      &__text {
+        word-wrap: break-word;
+        padding: 8px 16px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+  &__add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    background: #9f9f9f;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    &__line {
+      width: 8px;
+      height: 40px;
+      border-radius: 5px;
+      background-color: #fff;
+      &:first-child {
+        transform: rotate(90deg) translateY(-3px);
+      }
+      &:last-child {
+        transform: translateX(-4px);
+      }
+    }
+  }
+}
